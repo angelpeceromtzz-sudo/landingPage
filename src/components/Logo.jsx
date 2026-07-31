@@ -1,5 +1,5 @@
-import logoLobo from '../assets/logo-lobo.svg';
+import fotoAngel from '../assets/fotoAngelPecero.png';
 
-export default function Logo({ className = 'w-9 h-9' }) {
-  return <img src={logoLobo} alt="Logo Lobo" className={className} />;
+export default function Logo({ className = 'w-14 h-14 rounded-full object-cover' }) {
+  return <img src={fotoAngel} alt="Angel Antonio Pecero Martinez" className={className} />;
 }

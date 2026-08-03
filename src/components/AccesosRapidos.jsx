@@ -2,12 +2,29 @@ import { ExternalLink, Globe, Play, FileText, Video, Music } from 'lucide-react'
 import CONFIG from '../config';
 import TarjetaEnlace from './TarjetaEnlace';
 import logoLobo from '../assets/logo-lobo.svg';
+import srsDocumento from '../assets/SRS_ClubsUNID.pdf';
 
 function IconoLobo({ className }) {
   return <img src={logoLobo} alt="" className={className} />;
 }
 
 const ENLACES = [
+  {
+    icono: Music,
+    titulo: 'TikTok',
+    descripcion: CONFIG.TIKTOK
+      ? 'Síguenos y mira el contenido del proyecto'
+      : 'Pendiente - video en tiktok',
+    url: CONFIG.TIKTOK || CONFIG.SPA,
+    pendiente: !CONFIG.TIKTOK,
+  },
+  {
+    icono: Globe,
+    titulo: 'Portafolio Profesional',
+    descripcion: 'Conoce más sobre mi trabajo',
+    url: CONFIG.PORTAFOLIO,
+    pendiente: false,
+  },
   {
     icono: IconoLobo,
     titulo: 'Acceder al Sistema',
@@ -16,17 +33,10 @@ const ENLACES = [
     pendiente: false,
   },
   {
-    icono: Globe,
-    titulo: 'Portafolio Profesional',
-    descripcion: 'Conoce más sobre el desarrollo del proyecto',
-    url: CONFIG.PORTAFOLIO,
-    pendiente: false,
-  },
-  {
     icono: Play,
     titulo: 'Video Tutorial',
     descripcion: CONFIG.VIDEO_TUTORIAL
-      ? 'Aprende a usar el sistema paso a paso'
+      ? 'Un recorrido por el sistema'
       : 'Pendiente - tutorial del sistema',
     url: CONFIG.VIDEO_TUTORIAL || CONFIG.SPA,
     pendiente: !CONFIG.VIDEO_TUTORIAL,
@@ -34,11 +44,9 @@ const ENLACES = [
   {
     icono: FileText,
     titulo: 'Documento SRS',
-    descripcion: CONFIG.SRS
-      ? 'Especificación de Requisitos del Software'
-      : 'Pendiente - documento disponible',
-    url: CONFIG.SRS || CONFIG.SPA,
-    pendiente: !CONFIG.SRS,
+    descripcion: 'Especificación de Requisitos del Software',
+    url: CONFIG.SRS || srsDocumento,
+    pendiente: false,
   },
   {
     icono: Video,
@@ -48,13 +56,6 @@ const ENLACES = [
       : 'Pendiente - testimonio en video',
     url: CONFIG.VIDEO_TESTIMONIAL || CONFIG.SPA,
     pendiente: !CONFIG.VIDEO_TESTIMONIAL,
-  },
-  {
-    icono: Music,
-    titulo: 'TikTok',
-    descripcion: 'Pendiente - video en tiktok',
-    url: CONFIG.TIKTOK || CONFIG.SPA,
-    pendiente: !CONFIG.TIKTOK,
   },
 ];
 

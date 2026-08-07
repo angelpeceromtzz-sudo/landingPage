@@ -3,7 +3,7 @@ const CONFIG = {
   PORTAFOLIO: 'https://sobre-mi-tawny.vercel.app/',
   VIDEO_TUTORIAL: 'https://youtu.be/RTMP_4Dp1GA',
   SRS: null,
-  VIDEO_TESTIMONIAL: null,
+  VIDEO_TESTIMONIAL: 'https://youtu.be/LmRXfvkptH0',
   TIKTOK: 'https://vt.tiktok.com/ZS4DDRr9X/',
   AUTOR: 'Angel Antonio Pecero Martinez',
   UNIVERSIDAD: 'UNID Campeche',

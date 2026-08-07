@@ -42,13 +42,6 @@ const ENLACES = [
     pendiente: !CONFIG.VIDEO_TUTORIAL,
   },
   {
-    icono: FileText,
-    titulo: 'Documento SRS',
-    descripcion: 'Especificación de Requisitos del Software',
-    url: CONFIG.SRS || srsDocumento,
-    pendiente: false,
-  },
-  {
     icono: Video,
     titulo: 'Video Testimonial',
     descripcion: CONFIG.VIDEO_TESTIMONIAL
@@ -56,6 +49,13 @@ const ENLACES = [
       : 'Pendiente - testimonio en video',
     url: CONFIG.VIDEO_TESTIMONIAL || CONFIG.SPA,
     pendiente: !CONFIG.VIDEO_TESTIMONIAL,
+  },
+  {
+    icono: FileText,
+    titulo: 'Documento SRS',
+    descripcion: 'Especificación de Requisitos del Software',
+    url: CONFIG.SRS || srsDocumento,
+    pendiente: false,
   },
 ];
 
